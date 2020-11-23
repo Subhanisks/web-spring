@@ -14,7 +14,7 @@ agent any
     {
       steps
       {
-        pwsh(script: 'mvn package')
+        bat 'mvn package'
       }
     }
   }
