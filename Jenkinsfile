@@ -10,5 +10,12 @@ agent any
         echo "$GIT_BRANCH"
       }
     }
+    stage('Build')
+    {
+      steps
+      {
+        pwsh(script: 'mvn package')
+      }
+    }
   }
 }
