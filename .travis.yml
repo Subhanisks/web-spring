@@ -7,5 +7,3 @@ deploy:
     secure: 85081a30ab21289f60b3b33e0bab698f2c607989
   file: "/target/*.jar"
   skip_cleanup: true
-  on:
-    tags: true
