@@ -1,3 +1,11 @@
 language: java
 before_install:
   - chmod +x mvnw
+deploy:
+  provider: releases
+  api_key:
+    secure: 85081a30ab21289f60b3b33e0bab698f2c607989
+  file: "/target/*.jar"
+  skip_cleanup: true
+  on:
+    tags: true
