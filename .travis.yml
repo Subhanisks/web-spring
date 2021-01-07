@@ -1,8 +1,14 @@
+  
 language: java
-sudo: required
+
+jdk: openjdk8
+
 services:
- - docker
-before_install:
-  - chmod +x mvnw
-script:
- - ./mvnw clean install
+   - docker
+
+# skip installation step
+install: true
+
+cache:
+   directories:
+      - $HOME/.m2
