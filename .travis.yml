@@ -5,6 +5,9 @@ jdk: openjdk8
 
 services:
    - docker
+   
+before_install:
+  - chmod +x mvnw
 
 # skip installation step
 install: true
