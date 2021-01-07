@@ -10,5 +10,5 @@ before_install:
 # skip installation step
 install: true
 
-after_install:
+after_success:
 - docker images ls
