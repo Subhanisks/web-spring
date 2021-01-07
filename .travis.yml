@@ -11,4 +11,4 @@ before_install:
 install: true
 
 after_success:
-- docker images ls
+- docker build .
