@@ -1,8 +1,6 @@
   
 language: java
 
-services:
-   - docker
    
 before_install:
   - chmod +x mvnw
@@ -11,4 +9,4 @@ before_install:
 install: true
 
 after_success:
-- docker build .
+- echo $TRAVIS_BRANCH
