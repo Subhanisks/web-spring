@@ -11,4 +11,4 @@ before_install:
 install: true
 
 after_success:
-- docker build .
+- echo $TRAVIS_BRANCH
